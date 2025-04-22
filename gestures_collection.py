@@ -6,46 +6,37 @@ if not os.path.exists(IMG_DIR):
     os.makedirs(IMG_DIR)
 
 labels = [
-    "A",
-    "B",
-    "C",
-    "D",
-    "E",
-    "F",
-    "G",
-    "H",
-    "I",
-    "J",
-    "K",
-    "L",
-    "M",
-    "N",
-    "O",
-    "P",
-    "Q",
-    "R",
-    "S",
-    "T",
-    "U",
-    "V",
-    "W",
-    "X",
-    "Y",
-    "Z",
-    "0",
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "OK"
+    # "A",
+    # "B",
+    # "C",
+    # "D",
+    # "E",
+    # "F",
+    # "G",
+    # "H",
+    # "I",
+    # "J",
+    # "K",
+    # "L",
+    # "M",
+    # "N",
+    # "O",
+    # "P",
+    # "Q",
+    # "R",
+    # "S",
+    # "T",
+    # "U",
+    # "V",
+    # "W",
+    # "X",
+    # "Y",
+    # "Z",
+    "Good",
+    "Bad"
 ]
 
-number_of_samples = 100
+number_of_samples = 200
 
 cap = cv2.VideoCapture(0) # 0 for default camera
 
@@ -71,7 +62,6 @@ for i in range(len(labels)):
             cap.release()
             cv2.destroyAllWindows()
             exit()
-
 
     cnt = 0
     while cnt < number_of_samples:
