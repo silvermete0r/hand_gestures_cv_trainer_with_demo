@@ -1,7 +1,6 @@
 import cv2
 import mediapipe as mp
 import joblib
-import numpy as np
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning, module='google.protobuf')
 
